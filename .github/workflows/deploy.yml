@@ -32,7 +32,7 @@ jobs:
       - name: Build with Next.js
         run: npm run build
         env:
-          PAGES_BASE_PATH: /spedders.com---Preserved-from-2003
+          PAGES_BASE_PATH: /spedders.com-david-spedding-preservation
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
