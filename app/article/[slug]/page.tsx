@@ -1,10 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import data from "../../data.json";
 import type { SiteData } from "../../types";
 import { existsSync } from "fs";
 import { join } from "path";
+import { basePath } from "../../basepath";
 
 const siteData = data as SiteData;
 
@@ -57,7 +57,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   <td className="black-bar-v" style={{ height: 75, verticalAlign: "middle" }}></td>
                   <td style={{ width: 10 }}></td>
                   <td style={{ width: 69, height: 75, verticalAlign: "middle" }}>
-                    <Image src="/images/dd2-75.jpg" alt="David Spedding" width={69} height={75} />
+                    <img src={`${basePath}/images/dd2-75.jpg`} alt="David Spedding" width={69} height={75} />
                   </td>
                   <td style={{ width: 10 }}></td>
                   <td style={{ width: 510, height: 75, textAlign: "left", verticalAlign: "bottom" }} className="page-title">
@@ -77,8 +77,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   <td colSpan={3} style={{ textAlign: "center", verticalAlign: "top" }}>
                     {showThumb && (
                       <div style={{ paddingTop: 10 }} className="thumb-caption">
-                        <Image
-                          src={`/images/articles/${article.image}_thumb.jpg`}
+                        <img
+                          src={`${basePath}/images/articles/${article.image}_thumb.jpg`}
                           alt={article.title}
                           width={120}
                           height={160}

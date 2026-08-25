@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import data from "../data.json";
 import type { SiteData } from "../types";
+import { basePath } from "../basepath";
 
 const siteData = data as SiteData;
 
@@ -57,7 +57,7 @@ export default function Portfolio() {
                   <td className="black-bar-v" style={{ height: 75, verticalAlign: "middle" }}></td>
                   <td style={{ width: 10 }}></td>
                   <td style={{ width: 69, height: 75, verticalAlign: "middle" }}>
-                    <Image src="/images/dd2-75.jpg" alt="David Spedding" width={69} height={75} />
+                    <img src={`${basePath}/images/dd2-75.jpg`} alt="David Spedding" width={69} height={75} />
                   </td>
                   <td style={{ width: 10 }}></td>
                   <td style={{ width: 510, height: 75, textAlign: "left", verticalAlign: "bottom" }} className="page-title">
