@@ -1,26 +1,119 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-garamond);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 2%;
+  background: #ffffff;
+  color: #000000;
+  font-family: Tahoma, Verdana, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+}
+
+a, a:visited {
+  color: #808080;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #000080;
+}
+
+/* CSS replacements for spacer GIFs */
+.black-bar-v {
+  width: 1px;
+  background: #000;
+}
+
+.black-bar-h {
+  height: 1px;
+  background: #000;
+}
+
+.vert-separator {
+  width: 10px;
+  border-left: 1px solid #000;
+}
+
+/* Portfolio page styles */
+.section-header {
+  font-size: 16pt;
+  background: #eeeeee;
+  padding-left: 2px;
+}
+
+.show-tab {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  background: #eeeeee;
+  padding-left: 2px;
+}
+
+.show-table {
+  border: 1px solid #000;
+}
+
+.show-table td {
+  font-family: Tahoma, Verdana, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  padding: 1px 3px;
+}
+
+/* Title style */
+.page-title {
+  font-size: 24pt;
+  font-family: Tahoma, Verdana, Helvetica, Arial, sans-serif;
+}
+
+.nav-links {
+  font-family: Tahoma, Verdana, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+}
+
+/* Article page body styles - matches original style.css */
+.article-body p {
+  margin: 1em 0;
+}
+
+.article-body p.article,
+.article-body p.articleq,
+.article-body li.article,
+.article-body ul.article,
+.article-body blockquote.article {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 11pt;
+  font-weight: normal;
+  line-height: normal;
+}
+
+.article-body p.articleq,
+.article-body blockquote.articleq {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 11pt;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.article-body ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.article-body p.grey {
+  background: #eeeeee;
+}
+
+/* Thumbnail caption */
+.thumb-caption {
+  font-family: Tahoma, Verdana, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+}
+
+/* Footer/small text */
+.small-text {
+  font-size: 7pt;
 }

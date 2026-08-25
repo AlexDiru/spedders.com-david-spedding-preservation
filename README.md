@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# spedders.com — Preserved from 2003
 
-## Getting Started
+A rebuilt and preserved version of **David Spedding's** journalism portfolio website, originally at `www.spedders.com`.
 
-First, run the development server:
+David was a freelance journalist who wrote for publications including Arena, Heat, Attitude, Radio Times, Red, the Sunday Times, Daily Mirror, and others. His work included Q&A interviews and features covering shows such as Six Feet Under, The Sopranos, The West Wing, Bob & Rose, Will & Grace, Sex and the City, Smallville, Charmed, and ER, as well as interviews with figures like Stephen Fry, James Gandolfini, Jennifer Aniston, and Russell T Davies.
+
+The original site was built in PHP by Stuart Ford (Rhydio Ltd) in December 2001, with updates through April 2003. This rebuild faithfully preserves all 49 articles, images, and the original visual design using a modern TypeScript stack.
+
+Rest in peace, our son, brother, uncle, friend and colleague.
+
+## Tech stack
+
+- **Next.js 16** with TypeScript
+- **Tailwind CSS**
+- All article content extracted from the original PHP source and stored as static JSON
+- Statically generated at build time (SSG)
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Original source
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The `www.spedders.com` directory in the parent folder contains the original archived PHP site from circa 2001–2003.
