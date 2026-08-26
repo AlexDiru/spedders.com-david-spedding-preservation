@@ -113,6 +113,18 @@ a:hover, a:active {
   font-size: 9pt;
 }
 
+/* Homepage context block */
+.context-text {
+  font-family: Tahoma, Verdana, Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  color: #666;
+  line-height: 1.5;
+}
+
+.context-text p {
+  margin: 0.5em 0;
+}
+
 /* Footer/small text */
 .small-text {
   font-size: 7pt;

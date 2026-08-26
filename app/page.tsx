@@ -37,6 +37,34 @@ export default function Home() {
                     <b>[<Link href="/portfolio">ENTER</Link>]</b>
                   </td>
                 </tr>
+
+                {/* Context */}
+                <tr><td colSpan={5} style={{ height: 30 }}></td></tr>
+                <tr>
+                  <td colSpan={5} style={{ textAlign: "left", verticalAlign: "top" }} className="context-text">
+                    <p>
+                      This is a preserved version of David Spedding&#39;s journalism portfolio website,
+                      originally at <b>www.spedders.com</b>.
+                    </p>
+                    <p>
+                      David was a freelance journalist who wrote for publications
+                      including Arena, Heat, Attitude, Radio Times, and the Sunday
+                      Times. His work included Q&amp;A interviews
+                      and features covering shows such as Six Feet Under, The Sopranos,
+                      The West Wing, Bob &amp; Rose, Will &amp; Grace, Sex and the City,
+                      Smallville, Charmed, and ER, as well as interviews with figures
+                      like Stephen Fry, James Gandolfini, Jennifer Aniston, and Russell
+                      T Davies.
+                    </p>
+                    <p>
+                      The original site was built in PHP by Stuart Ford (Rhydio Ltd) in
+                      December 2001, with updates through April 2003. This rebuild attempts to 
+                      faithfully preserves all 49 articles, images, and the original
+                      visual design. This rebuild has been created by Alex Spedding - 
+                      David's nephew - using the original files from Stuart Ford. 
+                    </p>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </td>
