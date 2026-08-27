@@ -15,6 +15,10 @@ const garamond = EB_Garamond({
 export const metadata: Metadata = {
   title: "David Spedding",
   description: "The journalism portfolio of David Spedding",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
